@@ -22,11 +22,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/img/logo.png" alt="Logo">
-            </a>
+            <img class="navbar-brand" href="#inicio" src="./assets/img/logo.png" alt="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,35 +33,119 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Mis habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
-        </div>  
+        </div>
+
     </nav>
 
     <header>
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="./assets/img/developer.svg" alt="hero imagen" class="hero-devs">
+                </div>
+                <div class="col-12 col-md-6 text-start">
+                    <h2>Soy Diego de los Santos</h2>
+                    <h3>Desarrollador FrontEnd</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab omnis consectetur est excepturi
+                        voluptas consequuntur corrupti dicta eveniet voluptatibus. Quo minus delectus unde sequi odio
+                        reprehenderit nostrum commodi? Atque, harum!</p>
+                    <a href="#" class="btn btn-primary">Contactame</a>
+                </div>
+            </div>
 
-
+        </div>
     </header>
 
-    <section class="skills"></section>
 
-    <section class="projects"></section>
+    <section class="skills">
+        <div class="container">
+            <h2 class="text-center mt-4">Mis habilidades</h2>
+            <div class="row ">
+                <div class="col-md-3 col-6 skill">
+                    <img src="./assets/img/LogosHtmlIcon.svg" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="col-md-3 col-6 skill">
+                    <img src="./assets/img/LogosCssIcon.svg" alt="CSS">
+                    <span>CSS</span>
+                </div>
+                <div class="col-md-3 col-6 skill">
+                    <img src="./assets/img/LogosSassIcon.svg" alt="Sass">
+                    <span>Sass</span>
+                </div>
+                <div class="col-md-3 col-6 skill">
+                    <img src="./assets/img/LogosBootstrap.svg" alt="Bootstrap">
+                    <span>Bootstrap</span>
+                </div>
+                <div class="col-md-3 col-6 skill">
+                    <img src="./assets/img/LogosGitIcon.svg" alt="Git">
+                    <span>Git</span>
+                </div>
+                <div class="col-md-3 col-6 skill">
+                    <img src="./assets/img/LogosGithubIcon.svg" alt="GitHub">
+                    <span>GitHub</span>
+                </div>
+                <div class="col-md-3 col-6 skill">
+                    <img src="./assets/img/LogosJvsIcon.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="col-md-3 col-6 skill">
+                    <img src="./assets/img/LogosVueIcon.svg" alt="Vue">
+                    <span>Vue</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="contact"></section>
+    <section class="projects">
+        <div class="container">
+            <h2 class="text-center mt-4">Proyectos</h2>
+            <div class="row ">
+                <div class="col-md-3 col-6 projects_card">
+                    <img src="./assets/img/meetcoffee.png" alt="meetcoffee">
+                    <span>mett coffe</span>
+                </div>
+                <div class="col-md-3 col-6 projects_card">
+                    <img src="./assets/img/meetcoffee.png" alt="meetcoffee">
+                    <span>GitHub</span>
+                </div>
+                <div class="col-md-3 col-6 projects_card">
+                    <img src="./assets/img/meetcoffee.png" alt="meetcoffee">
+                    <span>JavaScript</span>
+                </div>
+                <div class="col-md-3 col-6 projects_card">
+                    <img src="./assets/img/meetcoffee.png" alt="meetcoffee">
+                    <span>Vue</span>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="text-center mt-4">Contactame</h2>
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h1>formulario</h1>
+                </div>
+                <div class="col-md-6 col-12">
+                    <h1>redes sociales</h1>
+                </div>
+            </div>
+    </section>
 
     <footer></footer>
 
