@@ -1,0 +1,13 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/reset';
+@import 'base/typography';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/forms';
+@import 'layout/footer';
+@import 'components/buttons';
+@import 'pages/home';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
