@@ -30,7 +30,7 @@
     <!-- seccion menu navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top bg-dark">
         <div class="container-fluid">
-            <img class="navbar-brand" href="#inicio" src="./assets/img/logo-web.png" alt="logo">
+            <img class="navbar-brand" href="#inicio" src="./assets/img/logo.png" alt="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -230,8 +230,33 @@
         </div>
     </footer>
 
-    <!-- Libreria Jscript del proyecto -->
-    <script type="module" src="./assets/js/scripts.js"></script>
+    <!-- scripts Jscript del proyecto -->
+    <script>
+        // script de validacion de formulario
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+    </script>
+    <!-- Libreria Jscript Jquery 3.7.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Libreria Jscript Bootstrap 5.1.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
 
 </body>
 
