@@ -1,0 +1,19 @@
+// Sección mis Habilidades
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: 1px img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+
+// sección proyectos
+.projects_card img {
+    width: 100%;
+}

@@ -19,90 +19,106 @@
 
     <!-- Importación de fuentes y iconos a utilizar desde Google Fonts y fontawesome -->
     <script src="https://kit.fontawesome.com/db3fc8e186.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- seccion menu navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top bg-dark">
         <div class="container-fluid">
-            <img class="navbar-brand" href="#inicio" src="./assets/img/logo.png" alt="logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="navbar-brand" href="#inicio" src="./assets/img/Logo-web.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <!-- links habilatado para ir a sección indicada en href -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mis habilidades</a>
+                        <a class="nav-link" href="#skills">Mis habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
+                        <a class="nav-link" href="#projects">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
 
     </nav>
-
-    <header>
-        <div class="container text-center py-5">
+    <!-- seccion hero -->
+    <header class="hero bg-success"> <!-- colores predeterminados de Bootstrap modificados  -->
+        <div class="container text-center text-warning py-5 mt-5">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <img src="./assets/img/developer.svg" alt="hero imagen" class="hero-devs">
                 </div>
-                <div class="col-12 col-md-6 text-start">
-                    <h2>Soy Diego de los Santos</h2>
-                    <h3>Desarrollador FrontEnd</h3>
+                <div class="col-12 col-md-6 text-start mt-5">
+                    <h2 class="fw-bold text-info">Soy Diego de los Santos</h2>
+                    <h4 class="fw-bold text-warning">Desarrollador FrontEnd</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab omnis consectetur est excepturi
                         voluptas consequuntur corrupti dicta eveniet voluptatibus. Quo minus delectus unde sequi odio
                         reprehenderit nostrum commodi? Atque, harum!</p>
-                    <a href="#" class="btn btn-primary">Contactame</a>
+                    <div class="button1">
+                        <button class="btn btn-primary d-none d-md-block"
+                            onclick="window.location.href='#contact';">Contactame</button>
+                    </div>
+                    <div class="button2 d-grid ">
+                        <button class="btn btn-primary d-block d-sm-none"
+                            onclick="window.location.href='#contact';">Contactame</button>
+                    </div>
                 </div>
+
             </div>
+        </div>
 
         </div>
     </header>
 
-
-    <section class="skills">
+    <!-- sección mis habilidades -->
+    <section id="skills" class="bg-warning"> <!-- colores predeterminados de Bootstrap modificados  -->
         <div class="container">
-            <h2 class="text-center mt-4">Mis habilidades</h2>
+            <h3 class=" fw-bold text-center mt-auto py-3">Mis habilidades</h3>
             <div class="row ">
-                <div class="col-md-3 col-6 skill">
+                <div class="col-md-2 col-6 skill ">
                     <img src="./assets/img/LogosHtmlIcon.svg" alt="HTML">
                     <span>HTML</span>
                 </div>
-                <div class="col-md-3 col-6 skill">
+                <div class="col-md-1 col-6 skill ">
                     <img src="./assets/img/LogosCssIcon.svg" alt="CSS">
                     <span>CSS</span>
                 </div>
-                <div class="col-md-3 col-6 skill">
+                <div class="col-md-2 col-6 skill">
                     <img src="./assets/img/LogosSassIcon.svg" alt="Sass">
                     <span>Sass</span>
                 </div>
-                <div class="col-md-3 col-6 skill">
+                <div class="col-md-1 col-6 skill">
                     <img src="./assets/img/LogosBootstrap.svg" alt="Bootstrap">
                     <span>Bootstrap</span>
                 </div>
-                <div class="col-md-3 col-6 skill">
+                <div class="col-md-2 col-6 skill">
                     <img src="./assets/img/LogosGitIcon.svg" alt="Git">
                     <span>Git</span>
                 </div>
-                <div class="col-md-3 col-6 skill">
+                <div class="col-md-1 col-6 skill">
                     <img src="./assets/img/LogosGithubIcon.svg" alt="GitHub">
                     <span>GitHub</span>
                 </div>
-                <div class="col-md-3 col-6 skill">
+                <div class="col-md-2 col-6 skill">
                     <img src="./assets/img/LogosJvsIcon.svg" alt="JavaScript">
                     <span>JavaScript</span>
                 </div>
-                <div class="col-md-3 col-6 skill">
+                <div class="col-md-1 col-6 skill">
                     <img src="./assets/img/LogosVueIcon.svg" alt="Vue">
                     <span>Vue</span>
                 </div>
@@ -110,47 +126,113 @@
         </div>
     </section>
 
-    <section class="projects">
+    <!-- sección proyectos -->
+    <section id="projects" class="bg-warning"> <!-- colores predeterminados de Bootstrap modificados  -->
         <div class="container">
-            <h2 class="text-center mt-4">Proyectos</h2>
-            <div class="row ">
+            <h3 class="fw-bold text-center mt-4 mt-auto py-3">Proyectos</h3>
+            <div class="row fw-bold">
                 <div class="col-md-3 col-6 projects_card">
-                    <img src="./assets/img/meetcoffee.png" alt="meetcoffee">
-                    <span>mett coffe</span>
+                    <a target="_blank" href="https://ddelosv.github.io/Blog-FrontEnd-con-Sass/"><img
+                            src="./assets/img/blog-frontend.png" alt="blog-frontend"></a>
+                    <p>Blog FrontEnd</p>
                 </div>
                 <div class="col-md-3 col-6 projects_card">
-                    <img src="./assets/img/meetcoffee.png" alt="meetcoffee">
-                    <span>GitHub</span>
+                    <a target="_blank" href="https://ddelosv.github.io/Cafeteria-Agere/"><img
+                            src="./assets/img/cafeteria-agere.png" alt="Cafetería Agere"></a>
+                    <p>Cafetería Agere</p>
                 </div>
                 <div class="col-md-3 col-6 projects_card">
-                    <img src="./assets/img/meetcoffee.png" alt="meetcoffee">
-                    <span>JavaScript</span>
+                    <a target="_blank" href="https://ddelosv.github.io/ricomida/"><img src="./assets/img/ricomida.png"
+                            alt="Ricomida"></a>
+                    <p>Ricomida</p>
                 </div>
                 <div class="col-md-3 col-6 projects_card">
-                    <img src="./assets/img/meetcoffee.png" alt="meetcoffee">
-                    <span>Vue</span>
+                    <a target="_blank" href="https://ddelosv.github.io/Proyecto-ViajesChile"><img
+                            src="./assets/img/viajes-chile.png" alt="Viajes Chile"></a>
+                    <p>Viajes Chile</p>
                 </div>
             </div>
 
     </section>
-
-    <section class="contact">
+    <!-- Seccion Contacto  -->
+    <footer id="contact" class="bg-info"> <!-- colores predeterminados de Bootstrap modificados  -->
         <div class="container">
-            <h2 class="text-center mt-4">Contactame</h2>
+            <h3 class="fw-bold text-center mt-auto py-3">Contactame</h3>
             <div class="row">
-                <div class="col-md-6 col-12">
-                    <h1>formulario</h1>
+                <div id="form" class="col-md-6 col-12 mx-auto">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label"></label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre"
+                                value="Nombre" required>
+                            <div class="invalid-feedback">
+                                Ingrese su Nombre.
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <label for="validationCustom02" class="form-label"></label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido"
+                                value="Apellido" required>
+                            <div class="invalid-feedback">
+                                Ingrese su Apellido.
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationemail" class="form-label"></label>
+                            <input type="email" class="form-control" placeholder="Tu email" id="validationemail"
+                                value="correo" required>
+                            <div class="invalid-feedback">
+                                Ingrese un correo valido.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="validationTextarea" class="form-label"></label>
+                            <textarea class="form-control" id="validationTextarea"
+                                placeholder="Escriba su mensaje aqui." required></textarea>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su mensaje.
+                            </div>
+                        </div>
+
+
+                        <div class="col-12">
+                            <button class="btn btn-primary d-none d-md-block" type="enviar">enviar</button>
+                        </div>
+                        <div class="col-12 d-grid ">
+                            <button class="btn btn-primary d-block d-sm-none" type="enviar">enviar</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-md-6 col-12">
-                    <h1>redes sociales</h1>
+
+                <div class="col-md-6 col-12 mt-3">
+                    <div class="col-6 mb-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+569 8888 8888</span>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>d.delosv@gmail.com</span>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>perfil Linkedin</span>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Perfil GitHub</span>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Perfil Instagram</span>
+                    </div>
                 </div>
             </div>
-    </section>
+        </div>
+    </footer>
 
-    <footer></footer>
-
-
-
+    </script>
+    <!-- Libreria Jscript del proyecto -->
+    <script type="module" src="./assets/js/scripts.js"></script>
 </body>
 
 </html>
